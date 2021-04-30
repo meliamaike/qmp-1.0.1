@@ -1,0 +1,9 @@
+<h2>Tus prendas</h2>
+
+<ul>
+  <% @prendas.each do |prenda| %>
+      <li><%= link_to prenda.tipo, prenda %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Crear nueva prenda", new_prenda_path %>
